@@ -20,7 +20,6 @@
 		F7847E752A9905E7000BED4D /* LearnCollectionReusableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7847E742A9905E7000BED4D /* LearnCollectionReusableHeader.swift */; };
 		F79DED452A8767330018FF13 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DED442A8767330018FF13 /* LoginViewController.swift */; };
 		F79DEDA52A878C920018FF13 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F79DEDA42A878C920018FF13 /* SF-Pro-Display-Regular.otf */; };
-		F79DEDAE2A878D090018FF13 /* Kanit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F79DEDAD2A878D090018FF13 /* Kanit-SemiBold.ttf */; };
 		F79DEDB02A878D680018FF13 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F79DEDAF2A878D680018FF13 /* SF-Pro-Display-Bold.otf */; };
 		F79DEDB22A87B7D10018FF13 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DEDB12A87B7D10018FF13 /* RegisterViewController.swift */; };
 		F79DEDB42A87FE2D0018FF13 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DEDB32A87FE2D0018FF13 /* HomePageViewController.swift */; };
@@ -90,7 +89,6 @@
 		F7847E742A9905E7000BED4D /* LearnCollectionReusableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnCollectionReusableHeader.swift; sourceTree = "<group>"; };
 		F79DED442A8767330018FF13 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F79DEDA42A878C920018FF13 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "../../../../../../Library/Fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
-		F79DEDAD2A878D090018FF13 /* Kanit-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kanit-SemiBold.ttf"; path = "../../../../Downloads/Kanit-3 2/Kanit-SemiBold.ttf"; sourceTree = "<group>"; };
 		F79DEDAF2A878D680018FF13 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "../../../../../../Library/Fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		F79DEDB12A87B7D10018FF13 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F79DEDB32A87FE2D0018FF13 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -193,16 +191,14 @@
 		F75144292A85349600E08830 /* WashMe */ = {
 			isa = PBXGroup;
 			children = (
-				F79DEDC42A88B3790018FF13 /* GoogleService-Info.plist */,
-				F751443B2A85349900E08830 /* Info.plist */,
+				F7547DCA2AA613550046DDB9 /* Resources */,
+				F7547DBE2AA610A50046DDB9 /* Application */,
 				F79DEDD32A88BB630018FF13 /* Models */,
 				F79DEDC22A88B3460018FF13 /* Supporting */,
-				F79DED462A8767570018FF13 /* Controller */,
+				F79DED462A8767570018FF13 /* Screens */,
 				F79DEDAF2A878D680018FF13 /* SF-Pro-Display-Bold.otf */,
-				F79DEDAD2A878D090018FF13 /* Kanit-SemiBold.ttf */,
 				F79DEDA42A878C920018FF13 /* SF-Pro-Display-Regular.otf */,
 				F79DEDE22A8BE2890018FF13 /* Extensions */,
-				F7F923102A8E54AC00A588B0 /* Views */,
 			);
 			path = WashMe;
 			sourceTree = "<group>";
@@ -224,28 +220,137 @@
 			path = WashMeUITests;
 			sourceTree = "<group>";
 		};
-		F79DED462A8767570018FF13 /* Controller */ = {
+		F7547DBE2AA610A50046DDB9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F751442A2A85349600E08830 /* AppDelegate.swift */,
+				F751442C2A85349600E08830 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F7547DBF2AA6112B0046DDB9 /* MainTabBarScreen */ = {
 			isa = PBXGroup;
 			children = (
 				F79DEDB52A8800020018FF13 /* MainTabBarController.swift */,
+			);
+			path = MainTabBarScreen;
+			sourceTree = "<group>";
+		};
+		F7547DC02AA6113D0046DDB9 /* UserProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
 				F79DEDB72A8802D20018FF13 /* UserProfileViewController.swift */,
-				F79DEDB92A8802DB0018FF13 /* LearnViewController.swift */,
+			);
+			path = UserProfileScreen;
+			sourceTree = "<group>";
+		};
+		F7547DC12AA611590046DDB9 /* LearnScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F7547DC92AA6121C0046DDB9 /* Model */,
+				F7547DC82AA611F90046DDB9 /* View */,
+				F7547DC72AA611E80046DDB9 /* Controller */,
+			);
+			path = LearnScreen;
+			sourceTree = "<group>";
+		};
+		F7547DC22AA6116C0046DDB9 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
 				F79DED442A8767330018FF13 /* LoginViewController.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		F7547DC32AA6117A0046DDB9 /* RegisterScreen */ = {
+			isa = PBXGroup;
+			children = (
 				F79DEDB12A87B7D10018FF13 /* RegisterViewController.swift */,
+			);
+			path = RegisterScreen;
+			sourceTree = "<group>";
+		};
+		F7547DC42AA6118E0046DDB9 /* HomePageScreen */ = {
+			isa = PBXGroup;
+			children = (
 				F79DEDB32A87FE2D0018FF13 /* HomePageViewController.swift */,
+			);
+			path = HomePageScreen;
+			sourceTree = "<group>";
+		};
+		F7547DC52AA6119C0046DDB9 /* ForgotPasswordScreen */ = {
+			isa = PBXGroup;
+			children = (
 				F79DEDBE2A88111C0018FF13 /* ForgotPasswordViewController.swift */,
+			);
+			path = ForgotPasswordScreen;
+			sourceTree = "<group>";
+		};
+		F7547DC62AA611B00046DDB9 /* AddItemScreen */ = {
+			isa = PBXGroup;
+			children = (
 				F7F923272A8FCC1D00A588B0 /* AddItemViewController.swift */,
 			);
+			path = AddItemScreen;
+			sourceTree = "<group>";
+		};
+		F7547DC72AA611E80046DDB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F79DEDB92A8802DB0018FF13 /* LearnViewController.swift */,
+			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7547DC82AA611F90046DDB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7847E722A98E08E000BED4D /* LearnCollectionViewCell.swift */,
+				F7847E742A9905E7000BED4D /* LearnCollectionReusableHeader.swift */,
+				F7F9231D2A8FA43700A588B0 /* ItemCell.xib */,
+				F7F9231F2A8FA51D00A588B0 /* ItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7547DC92AA6121C0046DDB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7F9232D2A90F95700A588B0 /* LaundrySign.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7547DCA2AA613550046DDB9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F79DEDC42A88B3790018FF13 /* GoogleService-Info.plist */,
+				F751443B2A85349900E08830 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F79DED462A8767570018FF13 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F7547DC62AA611B00046DDB9 /* AddItemScreen */,
+				F7547DC52AA6119C0046DDB9 /* ForgotPasswordScreen */,
+				F7547DC42AA6118E0046DDB9 /* HomePageScreen */,
+				F7547DC32AA6117A0046DDB9 /* RegisterScreen */,
+				F7547DC22AA6116C0046DDB9 /* LoginScreen */,
+				F7547DC12AA611590046DDB9 /* LearnScreen */,
+				F7547DC02AA6113D0046DDB9 /* UserProfileScreen */,
+				F7547DBF2AA6112B0046DDB9 /* MainTabBarScreen */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		F79DEDC22A88B3460018FF13 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				F751442A2A85349600E08830 /* AppDelegate.swift */,
 				F75144362A85349900E08830 /* Assets.xcassets */,
 				F7F9232B2A90F83C00A588B0 /* R.generated.swift */,
-				F751442C2A85349600E08830 /* SceneDelegate.swift */,
 				F79DEDD62A88CF970018FF13 /* Utilities.swift */,
 				F79DEDE72A8BEE730018FF13 /* Constants.swift */,
 			);
@@ -257,7 +362,6 @@
 			children = (
 				F75144332A85349600E08830 /* WashMe.xcdatamodeld */,
 				F7F9230C2A8E53AC00A588B0 /* Item.swift */,
-				F7F9232D2A90F95700A588B0 /* LaundrySign.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -270,17 +374,6 @@
 				F79DEDE52A8BE2E70018FF13 /* RegisterVCExtension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		F7F923102A8E54AC00A588B0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F7F9231D2A8FA43700A588B0 /* ItemCell.xib */,
-				F7F9231F2A8FA51D00A588B0 /* ItemCell.swift */,
-				F7847E722A98E08E000BED4D /* LearnCollectionViewCell.swift */,
-				F7847E742A9905E7000BED4D /* LearnCollectionReusableHeader.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,7 +502,6 @@
 				F7F9231E2A8FA43700A588B0 /* ItemCell.xib in Resources */,
 				F79DEDC52A88B3790018FF13 /* GoogleService-Info.plist in Resources */,
 				F79DEDA52A878C920018FF13 /* SF-Pro-Display-Regular.otf in Resources */,
-				F79DEDAE2A878D090018FF13 /* Kanit-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,7 +836,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 22496L8ZUC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WashMe/Info.plist;
+				INFOPLIST_FILE = WashMe/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WashMe;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -778,7 +870,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 22496L8ZUC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WashMe/Info.plist;
+				INFOPLIST_FILE = WashMe/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WashMe;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

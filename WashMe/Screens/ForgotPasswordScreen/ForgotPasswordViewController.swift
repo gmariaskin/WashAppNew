@@ -46,7 +46,6 @@ class ForgotPasswordViewController: UIViewController {
         view.addSubview(errorLabel)
         
         mainLabel.text = "Forgot password?"
-        mainLabel.font = R.font.kanitSemiBold(size: 30)
         mainLabel.textColor = .black
         mainLabel.textAlignment = .center
         
@@ -68,7 +67,6 @@ class ForgotPasswordViewController: UIViewController {
         submitButton.setTitle("Submit", for: .normal)
         submitButton.setTitleColor(.white, for: .normal)
         submitButton.setTitleColor(R.color.mainBlue(), for: .highlighted)
-        submitButton.titleLabel?.font = R.font.kanitSemiBold(size: 17)
         submitButton.backgroundColor = R.color.mainBlue()
         submitButton.layer.cornerRadius = 10
         submitButton.addTarget(self, action: #selector(logOut), for: .touchUpInside)

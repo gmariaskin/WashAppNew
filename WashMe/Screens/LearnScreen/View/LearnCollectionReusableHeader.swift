@@ -14,7 +14,7 @@ class LearnCollectionReusableHeader: UICollectionReusableView {
     public let headerLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
-        label.font = R.font.kanitSemiBold(size: 30)
+       // label.font = R.font.kanitSemiBold(size: 30)
         return label
     }()
     

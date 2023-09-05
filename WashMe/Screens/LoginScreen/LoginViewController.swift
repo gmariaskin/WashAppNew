@@ -153,7 +153,7 @@ class LoginViewController: UIViewController {
         mainLabel.text = "Let's get started"
         mainLabel.textColor = .black
         mainLabel.textAlignment = .left
-        mainLabel.font = R.font.kanitSemiBold(size: 30)
+       // mainLabel.font = R.font.kanitSemiBold(size: 30)
         
         subLabel.text = "Login into your account"
         subLabel.textColor = .gray
@@ -192,13 +192,13 @@ class LoginViewController: UIViewController {
         forgotPasswordButton.setTitleColor(R.color.mainBlue(), for: .normal)
         forgotPasswordButton.setTitleColor(.white, for: .highlighted)
         forgotPasswordButton.backgroundColor = .none
-        forgotPasswordButton.titleLabel?.font = R.font.kanitSemiBold(size: 15)
+       // forgotPasswordButton.titleLabel?.font = R.font.kanitSemiBold(size: 15)
         forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordPressed), for: .touchUpInside)
         
         loginButton.setTitle("Login", for: .normal)
         loginButton.setTitleColor(.white, for: .normal)
         loginButton.setTitleColor(R.color.mainBlue(), for: .highlighted)
-        loginButton.titleLabel?.font = R.font.kanitSemiBold(size: 17)
+       // loginButton.titleLabel?.font = R.font.kanitSemiBold(size: 17)
         loginButton.backgroundColor = R.color.mainBlue()
         loginButton.layer.cornerRadius = 10
         loginButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
@@ -210,7 +210,7 @@ class LoginViewController: UIViewController {
         registerButton.setTitle("Register", for: .normal)
         registerButton.setTitleColor(R.color.mainBlue(), for: .normal)
         registerButton.setTitleColor(.white, for: .highlighted)
-        registerButton.titleLabel?.font = R.font.kanitSemiBold(size: 15)
+        //registerButton.titleLabel?.font = R.font.kanitSemiBold(size: 15)
         registerButton.addTarget(self, action: #selector(registerButtonPressed), for: .touchUpInside)
         
         errorLabel.textColor = .red

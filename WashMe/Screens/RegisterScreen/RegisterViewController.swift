@@ -76,7 +76,7 @@ class RegisterViewController: UIViewController {
         mainLabel.text = "Register"
         mainLabel.textColor = .black
         mainLabel.textAlignment = .left
-        mainLabel.font = R.font.kanitSemiBold(size: 30)
+   
         
         subLabel.text = "Create your account"
         subLabel.textColor = .gray
@@ -128,7 +128,6 @@ class RegisterViewController: UIViewController {
         registerButton.setTitle("Register", for: .normal)
         registerButton.setTitleColor(.white, for: .normal)
         registerButton.setTitleColor(R.color.mainBlue(), for: .highlighted)
-        registerButton.titleLabel?.font = R.font.kanitSemiBold(size: 17)
         registerButton.backgroundColor = R.color.mainBlue()
         registerButton.layer.cornerRadius = 10
         registerButton.addTarget(self, action: #selector(registerButtonPressed), for: .touchUpInside)
@@ -140,7 +139,6 @@ class RegisterViewController: UIViewController {
         registerButton.setTitle("Register", for: .normal)
         registerButton.setTitleColor(.white, for: .normal)
         registerButton.setTitleColor(R.color.mainBlue(), for: .highlighted)
-        registerButton.titleLabel?.font = R.font.kanitSemiBold(size: 20)
         registerButton.backgroundColor = R.color.mainBlue()
     }
     

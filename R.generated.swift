@@ -152,12 +152,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 4 files.
+  /// This `R.file` struct is generated, and contains static references to 3 files.
   struct file {
     /// Resource file `GoogleService-Info.plist`.
     static let googleServiceInfoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "GoogleService-Info", pathExtension: "plist")
-    /// Resource file `Kanit-SemiBold.ttf`.
-    static let kanitSemiBoldTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Kanit-SemiBold", pathExtension: "ttf")
     /// Resource file `SF-Pro-Display-Bold.otf`.
     static let sfProDisplayBoldOtf = Rswift.FileResource(bundle: R.hostingBundle, name: "SF-Pro-Display-Bold", pathExtension: "otf")
     /// Resource file `SF-Pro-Display-Regular.otf`.
@@ -166,12 +164,6 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "GoogleService-Info", withExtension: "plist")`
     static func googleServiceInfoPlist(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.googleServiceInfoPlist
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-
-    /// `bundle.url(forResource: "Kanit-SemiBold", withExtension: "ttf")`
-    static func kanitSemiBoldTtf(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.kanitSemiBoldTtf
       return fileResource.bundle.url(forResource: fileResource)
     }
 
@@ -190,19 +182,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.font` struct is generated, and contains static references to 3 fonts.
+  /// This `R.font` struct is generated, and contains static references to 2 fonts.
   struct font: Rswift.Validatable {
-    /// Font `Kanit-SemiBold`.
-    static let kanitSemiBold = Rswift.FontResource(fontName: "Kanit-SemiBold")
     /// Font `SFProDisplay-Bold`.
     static let sfProDisplayBold = Rswift.FontResource(fontName: "SFProDisplay-Bold")
     /// Font `SFProDisplay-Regular`.
     static let sfProDisplayRegular = Rswift.FontResource(fontName: "SFProDisplay-Regular")
-
-    /// `UIFont(name: "Kanit-SemiBold", size: ...)`
-    static func kanitSemiBold(size: CGFloat) -> UIKit.UIFont? {
-      return UIKit.UIFont(resource: kanitSemiBold, size: size)
-    }
 
     /// `UIFont(name: "SFProDisplay-Bold", size: ...)`
     static func sfProDisplayBold(size: CGFloat) -> UIKit.UIFont? {
@@ -215,7 +200,6 @@ struct R: Rswift.Validatable {
     }
 
     static func validate() throws {
-      if R.font.kanitSemiBold(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Kanit-SemiBold' could not be loaded, is 'Kanit-SemiBold.ttf' added to the UIAppFonts array in this targets Info.plist?") }
       if R.font.sfProDisplayBold(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'SFProDisplay-Bold' could not be loaded, is 'SF-Pro-Display-Bold.otf' added to the UIAppFonts array in this targets Info.plist?") }
       if R.font.sfProDisplayRegular(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'SFProDisplay-Regular' could not be loaded, is 'SF-Pro-Display-Regular.otf' added to the UIAppFonts array in this targets Info.plist?") }
     }
